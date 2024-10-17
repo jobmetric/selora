@@ -2,12 +2,13 @@
 
 namespace JobMetric\Selora;
 
-use JobMetric\Selora\Providers\EventServiceProvider;
 use JobMetric\PackageCore\Enums\RegisterClassTypeEnum;
 use JobMetric\PackageCore\Exceptions\RegisterClassTypeNotFoundException;
 use JobMetric\PackageCore\PackageCore;
 use JobMetric\PackageCore\PackageCoreServiceProvider;
 use JobMetric\Panelio\Facades\Panelio;
+use JobMetric\Panelio\RouteRegistry;
+use JobMetric\Selora\Providers\EventServiceProvider;
 
 class SeloraServiceProvider extends PackageCoreServiceProvider
 {
@@ -19,9 +20,13 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         $package->name('selora')
             ->hasConfig()
             ->hasTranslation()
-            ->hasRoute()
             ->registerClass('event', EventServiceProvider::class, RegisterClassTypeEnum::REGISTER())
             ->registerClass('Selora', Selora::class, RegisterClassTypeEnum::SINGLETON());
+    }
+
+    public function afterRegisterPackage(): void
+    {
+        RouteRegistry::addPanel($this->package);
     }
 
     public function afterBootPackage(): void
