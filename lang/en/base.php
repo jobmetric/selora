@@ -12,6 +12,8 @@ return [
     |
     */
 
+    'panel_name' => 'Shopping (Selora)',
+
     'description' => 'A beautifully designed sales management panel that empowers businesses to streamline their sales processes, track performance, and maximize revenue with ease.',
 
     'sections' => [

@@ -32,11 +32,11 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
     public function afterBootPackage(): void
     {
         Panelio::addPanel('selora', [
-            'name' => config('selora.panel_name'),
+            'name' => 'selora::base.panel_name',
             'namespace' => 'JobMetric\Selora\Http\Controllers',
             'args' => [
                 'description' => trans('selora::base.description'),
-                'icon' => 'fas fa-user-shield',
+                'icon' => '<i class="ki-duotone ki-abstract-46 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'selora',
             'position' => 0,
