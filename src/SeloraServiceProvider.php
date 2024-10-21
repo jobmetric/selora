@@ -35,7 +35,7 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
             'name' => 'selora::base.panel_name',
             'namespace' => 'JobMetric\Selora\Http\Controllers',
             'args' => [
-                'description' => trans('selora::base.description'),
+                'description' => 'selora::base.description',
                 'icon' => '<i class="ki-duotone ki-abstract-46 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'selora',
@@ -43,9 +43,9 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('selora', 'content', [
-            'name' => trans('selora::base.sections.content.name'),
+            'name' => 'selora::base.sections.content.name',
             'args' => [
-                'title' => trans('selora::base.sections.content.title'),
+                'title' => 'selora::base.sections.content.title',
                 'icon' => '<i class="ki-duotone ki-abstract-26 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'selora.content',
@@ -53,9 +53,9 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('selora', 'sell', [
-            'name' => trans('selora::base.sections.sell.name'),
+            'name' => 'selora::base.sections.sell.name',
             'args' => [
-                'title' => trans('selora::base.sections.sell.title'),
+                'title' => 'selora::base.sections.sell.title',
                 'icon' => '<i class="ki-duotone ki-graph-up fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></i>',
             ],
             'permission' => 'selora.sell',
@@ -63,9 +63,9 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('selora', 'account', [
-            'name' => trans('selora::base.sections.account.name'),
+            'name' => 'selora::base.sections.account.name',
             'args' => [
-                'title' => trans('selora::base.sections.account.title'),
+                'title' => 'selora::base.sections.account.title',
                 'icon' => '<i class="ki-duotone ki-abstract-22 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'selora.account',
@@ -73,9 +73,9 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('selora', 'system', [
-            'name' => trans('selora::base.sections.system.name'),
+            'name' => 'selora::base.sections.system.name',
             'args' => [
-                'title' => trans('selora::base.sections.system.title'),
+                'title' => 'selora::base.sections.system.title',
                 'icon' => '<i class="ki-duotone ki-setting-3 fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>',
             ],
             'permission' => 'selora.system',
@@ -83,9 +83,9 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
         ]);
 
         Panelio::addSection('selora', 'report', [
-            'name' => trans('selora::base.sections.report.name'),
+            'name' => 'selora::base.sections.report.name',
             'args' => [
-                'title' => trans('selora::base.sections.report.title'),
+                'title' => 'selora::base.sections.report.title',
                 'icon' => '<i class="ki-duotone ki-chart-simple fs-2x"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
             ],
             'permission' => 'selora.report',
