@@ -39,4 +39,8 @@ return [
         ],
     ],
 
+    'dashboard' => [
+        'title' => 'Shopping Dashboard (Selora)'
+    ]
+
 ];

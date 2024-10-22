@@ -4,6 +4,7 @@ namespace JobMetric\Selora\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use JobMetric\Panelio\Http\Controllers\Controller;
 
 class SeloraController extends Controller
 {
@@ -14,8 +15,10 @@ class SeloraController extends Controller
      *
      * @return View
      */
-    public function index(Request $request): View
+    public function index(Request $request)
     {
-        return view('selora::index');
+        DomiTitle(trans('selora::base.dashboard.title'));
+
+        return view('selora::dashboard');
     }
 }
