@@ -42,7 +42,7 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
                 'icon' => '<i class="ki-duotone ki-abstract-46 fs-2x"><span class="path1"></span><span class="path2"></span></i>',
             ],
             'permission' => 'selora',
-            'position' => 0,
+            'position' => 10,
         ]);
 
         Panelio::addSection('selora', 'content', [
@@ -93,6 +93,28 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
             ],
             'permission' => 'selora.report',
             'position' => 0,
+        ]);
+
+        // added group menu
+        Panelio::addMenu('selora', 'content', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.content.menus.group_product',
+            'permission' => '',
+            'position' => 0,
+        ]);
+
+        Panelio::addMenu('selora', 'content', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.content.menus.group_content',
+            'permission' => '',
+            'position' => 100,
+        ]);
+
+        Panelio::addMenu('selora', 'content', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.content.menus.group_menu',
+            'permission' => '',
+            'position' => 200,
         ]);
     }
 }

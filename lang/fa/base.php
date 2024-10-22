@@ -20,6 +20,11 @@ return [
         'content' => [
             'name' => 'محتوا',
             'title' => 'مدیریت محتوا',
+            'menus' => [
+                'group_product' => 'محصول و خدمت',
+                'group_content' => 'محتوا',
+                'group_menu' => 'منو و لیست',
+            ]
         ],
         'sell' => [
             'name' => 'فروش',
@@ -40,7 +45,15 @@ return [
     ],
 
     'dashboard' => [
-        'title' => 'داشبورد فروش (Selora)'
+        'title' => 'داشبورد فروش (Selora)',
+        'tiles' => [
+            'total_customers' => 'تعداد مشتریان',
+            'total_sales' => 'کل فروش',
+            'total_orders' => 'تعداد سفارشات',
+            'total_online' => 'مشتریان آنلاین',
+            'total_sales_month' => 'کل فروش این ماه',
+            'total_sales_last_month' => 'کل فروش ماه گذشته',
+        ],
     ]
 
 ];
