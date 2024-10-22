@@ -40,7 +40,15 @@ return [
     ],
 
     'dashboard' => [
-        'title' => 'Shopping Dashboard (Selora)'
+        'title' => 'Shopping Dashboard (Selora)',
+        'tiles' => [
+            'total_customers' => 'Total Customers',
+            'total_sales' => 'Total Sales',
+            'total_orders' => 'Total Orders',
+            'total_online' => 'Online Customers',
+            'total_sales_month' => 'Sales This Month',
+            'total_sales_last_month' => 'Sales Last Month',
+        ],
     ]
 
 ];
