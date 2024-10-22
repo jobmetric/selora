@@ -95,7 +95,7 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
             'position' => 0,
         ]);
 
-        // added group menu
+        // added group menu for content section
         Panelio::addMenu('selora', 'content', [
             'type' => 'group',
             'name' => 'selora::base.sections.content.menus.group_product',
@@ -115,6 +115,44 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
             'name' => 'selora::base.sections.content.menus.group_menu',
             'permission' => '',
             'position' => 200,
+        ]);
+
+        // added group menu for sale section
+        Panelio::addMenu('selora', 'sell', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.sell.menus.group_sell',
+            'permission' => '',
+            'position' => 0,
+        ]);
+
+        Panelio::addMenu('selora', 'sell', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.sell.menus.group_advertising_and_marketing',
+            'permission' => '',
+            'position' => 100,
+        ]);
+
+        Panelio::addMenu('selora', 'sell', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.sell.menus.group_financial_management',
+            'permission' => '',
+            'position' => 200,
+        ]);
+
+        // added group menu for account section
+        Panelio::addMenu('selora', 'account', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.account.menus.group_customer',
+            'permission' => '',
+            'position' => 0,
+        ]);
+
+        // added group menu for system section
+        Panelio::addMenu('selora', 'system', [
+            'type' => 'group',
+            'name' => 'selora::base.sections.system.menus.group_plugins_and_modules',
+            'permission' => '',
+            'position' => 100,
         ]);
     }
 }

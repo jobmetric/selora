@@ -29,14 +29,25 @@ return [
         'sell' => [
             'name' => 'فروش',
             'title' => 'مدیریت فروش',
+            'menus' => [
+                'group_sell' => 'فروش',
+                'group_advertising_and_marketing' => 'تبلیغات و بازاریابی',
+                'group_financial_management' => 'مدیریت مالی',
+            ]
         ],
         'account' => [
-            'name' => 'حساب های کاربری',
-            'title' => 'حساب های کاربری',
+            'name' => 'حساب‌های کاربری',
+            'title' => 'حساب‌های کاربری',
+            'menus' => [
+                'group_customer' => 'مشتری‌ها',
+            ]
         ],
         'system' => [
             'name' => 'مدیریت',
             'title' => 'مدیریت سیستم',
+            'menus' => [
+                'group_plugins_and_modules' => 'افزونه‌ها و ماژول‌ها',
+            ],
         ],
         'report' => [
             'name' => 'گزارشات',

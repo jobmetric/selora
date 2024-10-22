@@ -20,14 +20,27 @@ return [
         'content' => [
             'name' => 'Content',
             'title' => 'Content Management',
+            'menus' => [
+                'group_product' => 'Product and Service',
+                'group_content' => 'Content',
+                'group_menu' => 'Menu and List',
+            ]
         ],
         'sell' => [
             'name' => 'Sell',
             'title' => 'Sell Management',
+            'menus' => [
+                'group_sell' => 'Sell',
+                'group_advertising_and_marketing' => 'Advertising and Marketing',
+                'group_financial_management' => 'Financial Management',
+            ]
         ],
         'account' => [
             'name' => 'Accounts',
             'title' => 'Account Management',
+            'menus' => [
+                'group_customer' => 'Customers',
+            ]
         ],
         'system' => [
             'name' => 'System',
