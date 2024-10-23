@@ -11,7 +11,7 @@
                             <span class="path2"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">327</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_customers') }}</span>
@@ -31,7 +31,7 @@
                             <span class="path4"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">27,5M</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_sales') }}</span>
@@ -49,7 +49,7 @@
                             <span class="path2"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">167</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_orders') }}</span>
@@ -68,7 +68,7 @@
                             <span class="path3"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">15</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_online') }}</span>
@@ -86,7 +86,7 @@
                             <span class="path2"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">16M</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_sales_month') }}</span>
@@ -104,7 +104,7 @@
                             <span class="path2"></span>
                         </i>
                     </div>
-                    <div class="d-flex flex-column my-7">
+                    <div class="d-flex flex-column my-2">
                         <span class="fw-semibold fs-3x text-gray-800 lh-3 ls-n2">150M</span>
                         <div class="m-0">
                             <span class="fw-semibold fs-6 text-gray-400">{{ trans('selora::base.dashboard.tiles.total_sales_last_month') }}</span>
