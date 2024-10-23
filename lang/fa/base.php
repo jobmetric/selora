@@ -22,6 +22,7 @@ return [
             'title' => 'مدیریت محتوا',
             'menus' => [
                 'group_product' => 'محصول و خدمت',
+                'product_category' => 'دسته‌بندی محصولات',
                 'group_content' => 'محتوا',
                 'group_menu' => 'منو و لیست',
             ]

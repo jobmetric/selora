@@ -11,5 +11,13 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array<class-string, array<int, class-string>>
      */
-    protected $listen = [];
+    protected $listen = [
+        \JobMetric\Selora\Events\SeloraBootedEvent::class => [
+            \JobMetric\Selora\Listeners\AddPanelMenuListeners::class,
+        ],
+
+        \JobMetric\Category\Events\CategoryTypeEvent::class => [
+            \JobMetric\Selora\Listeners\AddCategoryTypeProductCategoryListeners::class,
+        ],
+    ];
 }

@@ -22,6 +22,7 @@ return [
             'title' => 'Content Management',
             'menus' => [
                 'group_product' => 'Product and Service',
+                'product_category' => 'Product Category',
                 'group_content' => 'Content',
                 'group_menu' => 'Menu and List',
             ]
