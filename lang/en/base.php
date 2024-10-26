@@ -63,6 +63,42 @@ return [
             'total_sales_month' => 'Sales This Month',
             'total_sales_last_month' => 'Sales Last Month',
         ],
-    ]
+    ],
+
+    'category_type' => [
+        'product_category' => [
+            'label' => 'Product Category',
+            'description' => 'Product category',
+            'translation' => [
+                'description' => [
+                    'label' => 'Description',
+                    'info' => 'The description of the product category.',
+                    'placeholder' => 'Enter the description of the product category.',
+                ],
+                'meta_title' => [
+                    'label' => 'Meta Title',
+                    'info' => 'The meta title of the product category.',
+                    'placeholder' => 'Enter the meta title of the product category.',
+                ],
+                'meta_description' => [
+                    'label' => 'Meta Description',
+                    'info' => 'The meta description of the product category.',
+                    'placeholder' => 'Enter the meta description of the product category.',
+                ],
+                'meta_keywords' => [
+                    'label' => 'Meta Keywords',
+                    'info' => 'The meta keywords of the product category.',
+                    'placeholder' => 'Enter the meta keywords of the product category.',
+                ],
+            ],
+            'metadata' => [
+                'column_number' => [
+                    'label' => 'Column Number',
+                    'info' => 'The number of columns to display the product category.',
+                    'placeholder' => 'Enter the number of columns to display the product category.',
+                ],
+            ],
+        ],
+    ],
 
 ];
