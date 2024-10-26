@@ -89,7 +89,7 @@ class AddPanelMenuListeners
                 'section' => 'content',
                 'type' => 'product_category',
             ]),
-            'icon' => '<i class="ki-duotone ki-note-2 fs-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
+            'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
             'permission' => '',
             'position' => 100,
         ]);
