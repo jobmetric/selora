@@ -70,26 +70,17 @@ return [
             'label' => 'Product Category',
             'description' => 'Product category',
             'translation' => [
+                'name' => [
+                    'label' => 'Name',
+                    'info' => 'The name of the product category.',
+                    'placeholder' => 'Enter the name of the product category.',
+                ],
                 'description' => [
                     'label' => 'Description',
                     'info' => 'The description of the product category.',
                     'placeholder' => 'Enter the description of the product category.',
                 ],
-                'meta_title' => [
-                    'label' => 'Meta Title',
-                    'info' => 'The meta title of the product category.',
-                    'placeholder' => 'Enter the meta title of the product category.',
-                ],
-                'meta_description' => [
-                    'label' => 'Meta Description',
-                    'info' => 'The meta description of the product category.',
-                    'placeholder' => 'Enter the meta description of the product category.',
-                ],
-                'meta_keywords' => [
-                    'label' => 'Meta Keywords',
-                    'info' => 'The meta keywords of the product category.',
-                    'placeholder' => 'Enter the meta keywords of the product category.',
-                ],
+
             ],
             'metadata' => [
                 'column_number' => [
