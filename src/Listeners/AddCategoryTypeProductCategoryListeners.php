@@ -18,37 +18,25 @@ class AddCategoryTypeProductCategoryListeners
                 'description' => trans('selora::base.category_type.product_category.description'),
                 'hierarchical' => true,
                 'translation' => [
-                    'description' => [
-                        'type' => 'textarea',
-                        'label' => trans('selora::base.category_type.product_category.translation.description.label'),
-                        'info' => trans('selora::base.category_type.product_category.translation.description.info'),
-                        'placeholder' => trans('selora::base.category_type.product_category.translation.description.placeholder'),
-                        'validation' => 'string|nullable|sometimes',
+                    'fields' => [
+                        'name' => [
+                            'type' => 'text',
+                            'label' => 'selora::base.category_type.product_category.translation.name.label',
+                            'info' => 'selora::base.category_type.product_category.translation.name.info',
+                            'placeholder' => 'selora::base.category_type.product_category.translation.name.placeholder',
+                        ],
+                        'description' => [
+                            'type' => 'textarea',
+                            'label' => 'selora::base.category_type.product_category.translation.description.label',
+                            'info' => 'selora::base.category_type.product_category.translation.description.info',
+                            'placeholder' => 'selora::base.category_type.product_category.translation.description.placeholder',
+                            'validation' => 'string|nullable|sometimes',
+                        ],
                     ],
-                    'meta_title' => [
-                        'type' => 'text',
-                        'label' => trans('selora::base.category_type.product_category.translation.meta_title.label'),
-                        'info' => trans('selora::base.category_type.product_category.translation.meta_title.info'),
-                        'placeholder' => trans('baselora::basese.category_type.product_category.translation.meta_title.placeholder'),
-                        'validation' => 'string|nullable|sometimes',
-                    ],
-                    'meta_description' => [
-                        'type' => 'textarea',
-                        'label' => trans('selora::base.category_type.product_category.translation.meta_description.label'),
-                        'info' => trans('selora::base.category_type.product_category.translation.meta_description.info'),
-                        'placeholder' => trans('selora::base.category_type.product_category.translation.meta_description.placeholder'),
-                        'validation' => 'string|nullable|sometimes',
-                    ],
-                    'meta_keywords' => [
-                        'type' => 'text',
-                        'label' => trans('selora::base.category_type.product_category.translation.meta_keywords.label'),
-                        'info' => trans('selora::base.category_type.product_category.translation.meta_keywords.info'),
-                        'placeholder' => trans('base.category_type.product_category.translation.meta_keywords.placeholder'),
-                        'validation' => 'string|nullable|sometimes',
-                    ],
+                    'seo' => true,
                 ],
                 'metadata' => [
-                    'column-number' => [
+                    'column_number' => [
                         'type' => 'number',
                         'default' => 1,
                         'label' => trans('selora::base.category_type.product_category.metadata.column_number.label'),
@@ -57,6 +45,7 @@ class AddCategoryTypeProductCategoryListeners
                         'validation' => 'integer|min:1|max:4',
                     ],
                 ],
+                'has_url' => true,
                 'has_base_media' => true,
                 'media' => [
                     'gallery' => [
