@@ -34,7 +34,7 @@
         "laravel/framework": ">=9.19",
         "jobmetric/laravel-package-core": "^1.12",
         "jobmetric/panelio": "^1.4",
-        "jobmetric/laravel-category": "^1.8"
+        "jobmetric/laravel-category": "^1.10"
     },
     "autoload": {
         "files": [
