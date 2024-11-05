@@ -39,9 +39,9 @@ class AddCategoryTypeProductCategoryListeners
                     'column_number' => [
                         'type' => 'number',
                         'default' => 1,
-                        'label' => trans('selora::base.category_type.product_category.metadata.column_number.label'),
-                        'info' => trans('selora::base.category_type.product_category.metadata.column_number.info'),
-                        'placeholder' => trans('selora::base.category_type.product_category.metadata.column_number.placeholder'),
+                        'label' => 'selora::base.category_type.product_category.metadata.column_number.label',
+                        'info' => 'selora::base.category_type.product_category.metadata.column_number.info',
+                        'placeholder' => 'selora::base.category_type.product_category.metadata.column_number.placeholder',
                         'validation' => 'integer|min:1|max:4',
                     ],
                 ],
