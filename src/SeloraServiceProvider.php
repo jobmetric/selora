@@ -24,6 +24,7 @@ class SeloraServiceProvider extends PackageCoreServiceProvider
             ->hasConfig()
             ->hasTranslation()
             ->hasView()
+            ->hasRoute()
             ->registerClass('event', EventServiceProvider::class, RegisterClassTypeEnum::REGISTER())
             ->registerClass('Selora', Selora::class, RegisterClassTypeEnum::SINGLETON());
     }
