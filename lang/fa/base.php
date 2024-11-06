@@ -25,7 +25,7 @@ return [
                 'product_category' => 'دسته‌بندی محصولات',
                 'group_content' => 'محتوا',
                 'group_menu' => 'منو و لیست',
-            ]
+            ],
         ],
         'sell' => [
             'name' => 'فروش',
@@ -34,14 +34,14 @@ return [
                 'group_sell' => 'فروش',
                 'group_advertising_and_marketing' => 'تبلیغات و بازاریابی',
                 'group_financial_management' => 'مدیریت مالی',
-            ]
+            ],
         ],
         'account' => [
             'name' => 'حساب‌های کاربری',
             'title' => 'حساب‌های کاربری',
             'menus' => [
                 'group_customer' => 'مشتری‌ها',
-            ]
+            ],
         ],
         'system' => [
             'name' => 'مدیریت',
@@ -71,7 +71,7 @@ return [
     'category_type' => [
         'product_category' => [
             'label' => 'دسته‌بندی محصولات',
-            'description' => 'دسته‌بندی محصولات',
+            'description' => 'توضیحات دسته‌بندی محصولات',
             'translation' => [
                 'name' => [
                     'label' => 'نام',

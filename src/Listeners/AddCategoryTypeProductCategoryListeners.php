@@ -14,8 +14,8 @@ class AddCategoryTypeProductCategoryListeners
         $event->addType([
             'type' => 'product_category',
             'args' => [
-                'label' => trans('selora::base.category_type.product_category.label'),
-                'description' => trans('selora::base.category_type.product_category.description'),
+                'label' => 'selora::base.category_type.product_category.label',
+                'description' => 'selora::base.category_type.product_category.description',
                 'hierarchical' => true,
                 'translation' => [
                     'fields' => [
