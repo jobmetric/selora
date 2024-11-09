@@ -68,7 +68,7 @@ return [
         ],
     ],
 
-    'category_type' => [
+    'taxonomy_type' => [
         'product_category' => [
             'label' => 'دسته‌بندی محصولات',
             'description' => 'توضیحات دسته‌بندی محصولات',

@@ -2,34 +2,34 @@
 
 namespace JobMetric\Selora\Listeners;
 
-use JobMetric\Category\Events\CategoryTypeEvent;
+use JobMetric\Taxonomy\Events\TaxonomyTypeEvent;
 
-class AddCategoryTypeProductCategoryListeners
+class AddTaxonomyTypeProductCategoryListeners
 {
     /**
      * Handle the event.
      */
-    public function handle(CategoryTypeEvent $event): void
+    public function handle(TaxonomyTypeEvent $event): void
     {
         $event->addType([
             'type' => 'product_category',
             'args' => [
-                'label' => 'selora::base.category_type.product_category.label',
-                'description' => 'selora::base.category_type.product_category.description',
+                'label' => 'selora::base.taxonomy_type.product_category.label',
+                'description' => 'selora::base.taxonomy_type.product_category.description',
                 'hierarchical' => true,
                 'translation' => [
                     'fields' => [
                         'name' => [
                             'type' => 'text',
-                            'label' => 'selora::base.category_type.product_category.translation.name.label',
-                            'info' => 'selora::base.category_type.product_category.translation.name.info',
-                            'placeholder' => 'selora::base.category_type.product_category.translation.name.placeholder',
+                            'label' => 'selora::base.taxonomy_type.product_category.translation.name.label',
+                            'info' => 'selora::base.taxonomy_type.product_category.translation.name.info',
+                            'placeholder' => 'selora::base.taxonomy_type.product_category.translation.name.placeholder',
                         ],
                         'description' => [
                             'type' => 'textarea',
-                            'label' => 'selora::base.category_type.product_category.translation.description.label',
-                            'info' => 'selora::base.category_type.product_category.translation.description.info',
-                            'placeholder' => 'selora::base.category_type.product_category.translation.description.placeholder',
+                            'label' => 'selora::base.taxonomy_type.product_category.translation.description.label',
+                            'info' => 'selora::base.taxonomy_type.product_category.translation.description.info',
+                            'placeholder' => 'selora::base.taxonomy_type.product_category.translation.description.placeholder',
                             'validation' => 'string|nullable|sometimes',
                         ],
                     ],
@@ -39,9 +39,9 @@ class AddCategoryTypeProductCategoryListeners
                     'column_number' => [
                         'type' => 'number',
                         'default' => 1,
-                        'label' => 'selora::base.category_type.product_category.metadata.column_number.label',
-                        'info' => 'selora::base.category_type.product_category.metadata.column_number.info',
-                        'placeholder' => 'selora::base.category_type.product_category.metadata.column_number.placeholder',
+                        'label' => 'selora::base.taxonomy_type.product_category.metadata.column_number.label',
+                        'info' => 'selora::base.taxonomy_type.product_category.metadata.column_number.info',
+                        'placeholder' => 'selora::base.taxonomy_type.product_category.metadata.column_number.placeholder',
                         'validation' => 'integer|min:1|max:4',
                     ],
                 ],

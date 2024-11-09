@@ -16,8 +16,8 @@ class EventServiceProvider extends ServiceProvider
             \JobMetric\Selora\Listeners\AddPanelMenuListeners::class,
         ],
 
-        \JobMetric\Category\Events\CategoryTypeEvent::class => [
-            \JobMetric\Selora\Listeners\AddCategoryTypeProductCategoryListeners::class,
+        \JobMetric\Taxonomy\Events\TaxonomyTypeEvent::class => [
+            \JobMetric\Selora\Listeners\AddTaxonomyTypeProductCategoryListeners::class,
         ],
     ];
 }

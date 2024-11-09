@@ -65,7 +65,7 @@ return [
         ],
     ],
 
-    'category_type' => [
+    'taxonomy_type' => [
         'product_category' => [
             'label' => 'Product Category',
             'description' => 'Product category',

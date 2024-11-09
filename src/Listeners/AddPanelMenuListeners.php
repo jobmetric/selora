@@ -84,7 +84,7 @@ class AddPanelMenuListeners
         Panelio::addMenu('selora', 'content', [
             'type' => 'link',
             'name' => 'selora::base.sections.content.menus.product_category',
-            'link' => route('category.{type}.index', [
+            'link' => route('taxonomy.{type}.index', [
                 'panel' => 'selora',
                 'section' => 'content',
                 'type' => 'product_category',
