@@ -42,7 +42,8 @@ class AddTaxonomyTypeProductCategoryListeners
                         'label' => 'selora::base.taxonomy_type.product_category.metadata.column_number.label',
                         'info' => 'selora::base.taxonomy_type.product_category.metadata.column_number.info',
                         'placeholder' => 'selora::base.taxonomy_type.product_category.metadata.column_number.placeholder',
-                        'validation' => 'integer|min:1|max:4',
+                        'validation' => 'nullable|min:1|max:4',
+                        'has_filter' => false
                     ],
                 ],
                 'has_url' => true,
@@ -65,6 +66,15 @@ class AddTaxonomyTypeProductCategoryListeners
                             ]
                         ]
                     ]
+                ],
+                'configuration' => [
+                    'list' => [
+                        'show_description' => true,
+                        'filter' => true,
+                        'change_status' => true,
+                        'import' => true,
+                        'export' => true,
+                    ],
                 ],
             ],
         ]);
