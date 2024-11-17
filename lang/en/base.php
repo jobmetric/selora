@@ -24,6 +24,7 @@ return [
                 'group_product' => 'Product and Service',
                 'product_category' => 'Product Category',
                 'group_content' => 'Content',
+                'blog_category' => 'Blog Category',
                 'group_menu' => 'Menu and List',
             ]
         ],
@@ -87,6 +88,30 @@ return [
                     'label' => 'Column Number',
                     'info' => 'The number of columns to display the product category.',
                     'placeholder' => 'Enter the number of columns to display the product category.',
+                ],
+            ],
+        ],
+        'blog_category' => [
+            'label' => 'Blog Category',
+            'description' => 'Blog category',
+            'translation' => [
+                'name' => [
+                    'label' => 'Name',
+                    'info' => 'The name of the blog category.',
+                    'placeholder' => 'Enter the name of the blog category.',
+                ],
+                'description' => [
+                    'label' => 'Description',
+                    'info' => 'The description of the blog category.',
+                    'placeholder' => 'Enter the description of the blog category.',
+                ],
+
+            ],
+            'metadata' => [
+                'column_number' => [
+                    'label' => 'Column Number',
+                    'info' => 'The number of columns to display the blog category.',
+                    'placeholder' => 'Enter the number of columns to display the blog category.',
                 ],
             ],
         ],

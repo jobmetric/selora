@@ -91,7 +91,7 @@ class AddPanelMenuListeners
             ]),
             'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
             'permission' => '',
-            'position' => 100,
+            'position' => 1,
         ]);
 
         Panelio::addMenu('selora', 'content', [
@@ -99,6 +99,19 @@ class AddPanelMenuListeners
             'name' => 'selora::base.sections.content.menus.group_content',
             'permission' => '',
             'position' => 100,
+        ]);
+
+        Panelio::addMenu('selora', 'content', [
+            'type' => 'link',
+            'name' => 'selora::base.sections.content.menus.blog_category',
+            'link' => route('taxonomy.{type}.index', [
+                'panel' => 'selora',
+                'section' => 'content',
+                'type' => 'blog_category',
+            ]),
+            'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
+            'permission' => '',
+            'position' => 101,
         ]);
 
         Panelio::addMenu('selora', 'content', [
