@@ -11,7 +11,7 @@ class AddPostTypePostListeners
     public function handle(PostTypeEvent $event): void
     {
         $event->addType([
-            'type' => 'product_category',
+            'type' => 'page',
             'args' => [
                 'label' => trans('selora::base.category_type.product_category.label'),
                 'description' => trans('selora::base.category_type.product_category.description'),
@@ -29,7 +29,7 @@ class AddPostTypePostListeners
                             'label' => 'selora::base.category_type.product_category.translation.description.label',
                             'info' => 'selora::base.category_type.product_category.translation.description.info',
                             'placeholder' => 'selora::base.category_type.product_category.translation.description.placeholder',
-                            'validation' => 'string|nullable|sometimes',
+                            'validation' => 'required|string',
                         ],
                     ],
                     'seo' => true,
