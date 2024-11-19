@@ -47,6 +47,11 @@ return [
         'system' => [
             'name' => 'System',
             'title' => 'System Management',
+            'menus' => [
+                'group_order' => 'Orders',
+                'order_status' => 'Order Status',
+                'group_plugins_and_modules' => 'Plugins and Modules',
+            ],
         ],
         'report' => [
             'name' => 'Reports',
@@ -112,6 +117,22 @@ return [
                     'label' => 'Column Number',
                     'info' => 'The number of columns to display the blog category.',
                     'placeholder' => 'Enter the number of columns to display the blog category.',
+                ],
+            ],
+        ],
+        'order_status' => [
+            'label' => 'Order Status',
+            'description' => 'Order status',
+            'translation' => [
+                'name' => [
+                    'label' => 'Name',
+                    'info' => 'The name of the order status.',
+                    'placeholder' => 'Enter the name of the order status.',
+                ],
+                'description' => [
+                    'label' => 'Description',
+                    'info' => 'The description of the order status.',
+                    'placeholder' => 'Enter the description of the order status.',
                 ],
             ],
         ],
