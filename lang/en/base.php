@@ -23,6 +23,7 @@ return [
             'menus' => [
                 'group_product' => 'Product and Service',
                 'product_category' => 'Product Category',
+                'product_tag' => 'Product Tags',
                 'group_content' => 'Content',
                 'blog_category' => 'Blog Category',
                 'group_menu' => 'Menu and List',
@@ -93,6 +94,30 @@ return [
                     'label' => 'Column Number',
                     'info' => 'The number of columns to display the product category.',
                     'placeholder' => 'Enter the number of columns to display the product category.',
+                ],
+            ],
+        ],
+        'product_tag' => [
+            'label' => 'Product Tag',
+            'description' => 'Product tag',
+            'translation' => [
+                'name' => [
+                    'label' => 'Name',
+                    'info' => 'The name of the product tag.',
+                    'placeholder' => 'Enter the name of the product tag.',
+                ],
+                'description' => [
+                    'label' => 'Description',
+                    'info' => 'The description of the product tag.',
+                    'placeholder' => 'Enter the description of the product tag.',
+                ],
+
+            ],
+            'metadata' => [
+                'column_number' => [
+                    'label' => 'Column Number',
+                    'info' => 'The number of columns to display the product tag.',
+                    'placeholder' => 'Enter the number of columns to display the product tag.',
                 ],
             ],
         ],

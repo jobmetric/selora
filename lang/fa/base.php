@@ -23,6 +23,7 @@ return [
             'menus' => [
                 'group_product' => 'محصول و خدمت',
                 'product_category' => 'دسته‌بندی محصولات',
+                'product_tag' => 'تگ‌های محصولات',
                 'group_content' => 'محتوا',
                 'blog_category' => 'دسته‌بندی وبلاگ',
                 'group_menu' => 'منو و لیست',
@@ -92,6 +93,29 @@ return [
                     'label' => 'تعداد ستون',
                     'info' => 'تعداد ستون دسته‌بندی محصولات',
                     'placeholder' => 'تعداد ستون دسته‌بندی محصولات',
+                ],
+            ],
+        ],
+        'product_tag' => [
+            'label' => 'تگ‌های محصولات',
+            'description' => 'توضیحات تگ‌های محصولات',
+            'translation' => [
+                'name' => [
+                    'label' => 'نام',
+                    'info' => 'نام تگ محصولات',
+                    'placeholder' => 'نام تگ محصولات را وارد کنید',
+                ],
+                'description' => [
+                    'label' => 'توضیحات',
+                    'info' => 'توضیحات تگ محصولات',
+                    'placeholder' => 'توضیحات تگ محصولات را وارد کنید',
+                ],
+            ],
+            'metadata' => [
+                'column_number' => [
+                    'label' => 'تعداد ستون',
+                    'info' => 'تعداد ستون تگ محصولات',
+                    'placeholder' => 'تعداد ستون تگ محصولات',
                 ],
             ],
         ],
