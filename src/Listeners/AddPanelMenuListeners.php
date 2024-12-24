@@ -166,10 +166,23 @@ class AddPanelMenuListeners
 
         // added group menu for system section
         Panelio::addMenu('selora', 'system', [
+            'type' => 'link',
+            'name' => 'selora::base.sections.system.menus.configuration',
+            'link' => route('setting.{type}.index', [
+                'panel' => 'selora',
+                'section' => 'system',
+                'type' => 'selora_config',
+            ]),
+            'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
+            'permission' => '',
+            'position' => 0,
+        ]);
+
+        Panelio::addMenu('selora', 'system', [
             'type' => 'group',
             'name' => 'selora::base.sections.system.menus.group_order',
             'permission' => '',
-            'position' => 0,
+            'position' => 100,
         ]);
 
         Panelio::addMenu('selora', 'system', [
@@ -182,14 +195,14 @@ class AddPanelMenuListeners
             ]),
             'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
             'permission' => '',
-            'position' => 1,
+            'position' => 101,
         ]);
 
         Panelio::addMenu('selora', 'system', [
             'type' => 'group',
             'name' => 'selora::base.sections.system.menus.group_plugins_and_modules',
             'permission' => '',
-            'position' => 100,
+            'position' => 200,
         ]);
     }
 }

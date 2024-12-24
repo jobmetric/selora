@@ -19,74 +19,46 @@ class AddSettingTypeListeners
     public function handle(SeloraBootedEvent $event): void
     {
         SettingType::define('selora_config')
-            ->label('Selora Config Label')
-            ->description('Selora Config Description')
+            ->label('selora::base.setting_type.selora_config.label')
+            ->description('selora::base.setting_type.selora_config.description')
             ->form(function(FormBuilder $formBuilder){
                 $formBuilder
-                    ->action('selora_config')
                     ->tab(function(TabBuilder $tabBuilder){
                         $tabBuilder
-                            ->label('Selora Config Tab')
+                            ->id('general')
+                            ->label('selora::base.setting_type.selora_config.tab.general.label')
+                            ->selected()
                             ->group(function (GroupBuilder $groupBuilder) {
                                 $groupBuilder
-                                    ->label('selora_config_text')
-                                    ->description('Selora Config Text Description')
+                                    ->label('selora::base.setting_type.selora_config.tab.general.group_product_label')
                                     ->customField(function (CustomFieldBuilder $customFieldBuilder) {
                                         $customFieldBuilder::text()
-                                            ->label('Group Selora Config Text')
-                                            ->name('Group selora_config_text');
+                                            ->label('selora::base.setting_type.selora_config.tab.general.product_limit')
+                                            ->validation('required|integer')
+                                            ->name('selora_config_product_limit', 'product_limit');
                                     })
                                     ->customField(function (CustomFieldBuilder $customFieldBuilder) {
                                         $customFieldBuilder::text()
-                                            ->label('Group Selora Config Text 2')
-                                            ->name('Group selora_config_text_2');
+                                            ->label('selora::base.setting_type.selora_config.tab.general.comment')
+                                            ->name('selora_config_comment', 'comment');
                                     });
                             })
                             ->customField(function (CustomFieldBuilder $customFieldBuilder) {
                                 $customFieldBuilder::text()
-                                    ->label('Selora Config Text')
-                                    ->name('selora_config_text');
+                                    ->label('selora::base.setting_type.selora_config.tab.general.min_gift_cart')
+                                    ->name('selora_config_min_gift_cart', 'min_gift_cart');
                             })
                             ->customField(function (CustomFieldBuilder $customFieldBuilder) {
                                 $customFieldBuilder::text()
-                                    ->label('Selora Config Text 2')
-                                    ->name('selora_config_text_2');
-                            });
-                    })
-                    ->tab(function(TabBuilder $tabBuilder){
-                        $tabBuilder
-                            ->label('Selora Config Tab 2')
-                            ->group(function (GroupBuilder $groupBuilder) {
-                                $groupBuilder
-                                    ->label('selora_config_text_3')
-                                    ->description('Selora Config Text Description 3')
-                                    ->customField(function (CustomFieldBuilder $customFieldBuilder) {
-                                        $customFieldBuilder::text()
-                                            ->label('Group Selora Config Text 3')
-                                            ->name('Group selora_config_text_3');
-                                    })
-                                    ->customField(function (CustomFieldBuilder $customFieldBuilder) {
-                                        $customFieldBuilder::text()
-                                            ->label('Group Selora Config Text 4')
-                                            ->name('Group selora_config_text_4');
-                                    });
-                            })
-                            ->customField(function (CustomFieldBuilder $customFieldBuilder) {
-                                $customFieldBuilder::text()
-                                    ->label('Selora Config Text 3')
-                                    ->name('selora_config_text_3');
-                            })
-                            ->customField(function (CustomFieldBuilder $customFieldBuilder) {
-                                $customFieldBuilder::text()
-                                    ->label('Selora Config Text 4')
-                                    ->name('selora_config_text_4');
+                                    ->label('selora::base.setting_type.selora_config.tab.general.max_gift_cart')
+                                    ->name('selora_config_max_gift_cart', 'max_gift_cart');
                             });
                     });
             });
 
         /*$ss = SettingType::type('selora_config');
         echo '<pre dir="ltr">';
-        var_dump($ss);
+        var_dump($ss->getFormCustomFields());
         echo '</pre>';
         die;*/
 

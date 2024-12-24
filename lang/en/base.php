@@ -49,6 +49,7 @@ return [
             'name' => 'System',
             'title' => 'System Management',
             'menus' => [
+                'configuration' => 'Setting',
                 'group_order' => 'Orders',
                 'order_status' => 'Order Status',
                 'group_plugins_and_modules' => 'Plugins and Modules',
@@ -158,6 +159,23 @@ return [
                     'label' => 'Description',
                     'info' => 'The description of the order status.',
                     'placeholder' => 'Enter the description of the order status.',
+                ],
+            ],
+        ],
+    ],
+
+    'setting_type' => [
+        'selora_config' => [
+            'label' => 'Sales Settings',
+            'description' => 'Sales settings',
+            'tab' => [
+                'general' => [
+                    'label' => 'General',
+                    'group_product_label' => 'Product Settings',
+                    'product_limit' => 'Items per page',
+                    'comment' => 'Allow comment',
+                    'min_gift_cart' => 'Minimum gift cart',
+                    'max_gift_cart' => 'Maximum gift cart',
                 ],
             ],
         ],

@@ -49,6 +49,7 @@ return [
             'name' => 'مدیریت',
             'title' => 'مدیریت سیستم',
             'menus' => [
+                'configuration' => 'تنظیمات',
                 'group_order' => 'سفارش‌ها',
                 'order_status' => 'وضعیت‌های سفارش',
                 'group_plugins_and_modules' => 'افزونه‌ها و ماژول‌ها',
@@ -155,6 +156,23 @@ return [
                     'label' => 'توضیحات',
                     'info' => 'توضیحات وضعیت های سفارش',
                     'placeholder' => 'توضیحات وضعیت های سفارش را وارد کنید',
+                ],
+            ],
+        ],
+    ],
+
+    'setting_type' => [
+        'selora_config' => [
+            'label' => 'تنظیمات فروش',
+            'description' => 'تنظیمات فروش',
+            'tab' => [
+                'general' => [
+                    'label' => 'عمومی',
+                    'group_product_label' => 'تنظیمات محصول',
+                    'product_limit' => 'تعداد آیتم ها در هر صفحه',
+                    'comment' => 'اجازه ثبت نظر',
+                    'min_gift_cart' => 'حداقل کارت هدیه',
+                    'max_gift_cart' => 'حداکثر کارت هدیه',
                 ],
             ],
         ],
