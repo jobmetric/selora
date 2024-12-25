@@ -21,9 +21,9 @@ class AddSettingTypeListeners
         SettingType::define('selora_config')
             ->label('selora::base.setting_type.selora_config.label')
             ->description('selora::base.setting_type.selora_config.description')
-            ->form(function(FormBuilder $formBuilder){
+            ->form(function (FormBuilder $formBuilder) {
                 $formBuilder
-                    ->tab(function(TabBuilder $tabBuilder){
+                    ->tab(function (TabBuilder $tabBuilder) {
                         $tabBuilder
                             ->id('general')
                             ->label('selora::base.setting_type.selora_config.tab.general.label')
@@ -55,12 +55,5 @@ class AddSettingTypeListeners
                             });
                     });
             });
-
-        /*$ss = SettingType::type('selora_config');
-        echo '<pre dir="ltr">';
-        var_dump($ss->getFormCustomFields());
-        echo '</pre>';
-        die;*/
-
     }
 }
