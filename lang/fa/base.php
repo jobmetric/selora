@@ -23,6 +23,7 @@ return [
             "menus" => [
                 "group_product" => "محصول و خدمت",
                 "product_category" => "دسته‌بندی محصولات",
+                "attribute" => "ویژگی‌ها",
                 "product_tag" => "تگ‌های محصولات",
                 "group_content" => "محتوا",
                 "blog_category" => "دسته‌بندی وبلاگ",

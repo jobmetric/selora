@@ -23,6 +23,7 @@ return [
             "menus" => [
                 "group_product" => "Product and Service",
                 "product_category" => "Product Category",
+                "attribute" => "Attributes",
                 "product_tag" => "Product Tags",
                 "group_content" => "Content",
                 "blog_category" => "Blog Category",

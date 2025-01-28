@@ -108,6 +108,18 @@ class AddPanelMenuListeners
         ]);
 
         Panelio::addMenu('selora', 'content', [
+            'type' => 'link',
+            'name' => 'selora::base.sections.content.menus.attribute',
+            'link' => route('attribute.index', [
+                'panel' => 'selora',
+                'section' => 'content',
+            ]),
+            'icon' => '<i class="ki-duotone ki-note-2 {class}"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>',
+            'permission' => '',
+            'position' => 1,
+        ]);
+
+        Panelio::addMenu('selora', 'content', [
             'type' => 'group',
             'name' => 'selora::base.sections.content.menus.group_content',
             'permission' => '',
