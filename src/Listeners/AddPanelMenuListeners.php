@@ -110,7 +110,7 @@ class AddPanelMenuListeners
         Panelio::addMenu('selora', 'content', [
             'type' => 'link',
             'name' => 'selora::base.sections.content.menus.attribute',
-            'link' => route('attribute.index', [
+            'link' => route('attributes.index', [
                 'panel' => 'selora',
                 'section' => 'content',
             ]),
