@@ -3,12 +3,12 @@
 namespace JobMetric\Selora\Listeners;
 
 use JobMetric\CustomField\CustomFieldBuilder;
-use JobMetric\Media\Typeify\MediaBuilder;
-use JobMetric\Metadata\Typeify\Metadata;
-use JobMetric\Metadata\Typeify\MetadataBuilder;
+use JobMetric\Media\Support\MediaBuilder;
+use JobMetric\Metadata\Support\Metadata;
+use JobMetric\Metadata\Support\MetadataBuilder;
 use JobMetric\Selora\Events\SeloraBootedEvent;
-use JobMetric\Taxonomy\Facades\TaxonomyType;
-use JobMetric\Translation\Typeify\TranslationBuilder;
+use JobMetric\Taxonomy\Facades\TaxonomyTypeRegistry;
+use JobMetric\Translation\Support\TranslationBuilder;
 use Throwable;
 
 class AddTaxonomyTypeListeners
@@ -33,7 +33,7 @@ class AddTaxonomyTypeListeners
             ]);*/
 
         // product_category
-        TaxonomyType::define('product_category')
+        TaxonomyTypeRegistry::register('product_category')
             ->label('selora::base.taxonomy_type.product_category.label')
             ->description('selora::base.taxonomy_type.product_category.description')
             ->hierarchical()
@@ -102,7 +102,7 @@ class AddTaxonomyTypeListeners
             });
 
         // blog category
-        TaxonomyType::define('blog_category')
+        TaxonomyTypeRegistry::register('blog_category')
             ->label('selora::base.taxonomy_type.blog_category.label')
             ->description('selora::base.taxonomy_type.blog_category.description')
             ->hierarchical()
@@ -146,7 +146,7 @@ class AddTaxonomyTypeListeners
             });
 
         // product tag
-        TaxonomyType::define('product_tag')
+        TaxonomyTypeRegistry::register('product_tag')
             ->label('selora::base.taxonomy_type.product_tag.label')
             ->description('selora::base.taxonomy_type.product_tag.description')
             ->showDescriptionInList()
@@ -168,7 +168,7 @@ class AddTaxonomyTypeListeners
             ->baseMedia();
 
         // customer group
-        TaxonomyType::define('customer_group')
+        TaxonomyTypeRegistry::register('customer_group')
             ->label('selora::base.taxonomy_type.customer_group.label')
             ->description('selora::base.taxonomy_type.customer_group.description')
             ->showDescriptionInList()
@@ -187,7 +187,7 @@ class AddTaxonomyTypeListeners
             });
 
         // order_status
-        TaxonomyType::define('order_status')
+        TaxonomyTypeRegistry::register('order_status')
             ->label('selora::base.taxonomy_type.order_status.label')
             ->description('selora::base.taxonomy_type.order_status.description')
             ->changeStatusInList()
@@ -204,7 +204,7 @@ class AddTaxonomyTypeListeners
             });
 
         // return_status
-        TaxonomyType::define('return_status')
+        TaxonomyTypeRegistry::register('return_status')
             ->label('selora::base.taxonomy_type.return_status.label')
             ->description('selora::base.taxonomy_type.return_status.description')
             ->changeStatusInList()
@@ -221,7 +221,7 @@ class AddTaxonomyTypeListeners
             });
 
         // return_action
-        TaxonomyType::define('return_action')
+        TaxonomyTypeRegistry::register('return_action')
             ->label('selora::base.taxonomy_type.return_action.label')
             ->description('selora::base.taxonomy_type.return_action.description')
             ->changeStatusInList()
@@ -238,7 +238,7 @@ class AddTaxonomyTypeListeners
             });
 
         // return_reason
-        TaxonomyType::define('return_reason')
+        TaxonomyTypeRegistry::register('return_reason')
             ->label('selora::base.taxonomy_type.return_reason.label')
             ->description('selora::base.taxonomy_type.return_reason.description')
             ->changeStatusInList()
@@ -255,7 +255,7 @@ class AddTaxonomyTypeListeners
             });
 
         // tax_class
-        TaxonomyType::define('tax_class')
+        TaxonomyTypeRegistry::register('tax_class')
             ->label('selora::base.taxonomy_type.tax_class.label')
             ->description('selora::base.taxonomy_type.tax_class.description')
             ->changeStatusInList()
