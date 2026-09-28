@@ -3,12 +3,12 @@
 namespace JobMetric\Selora\Listeners;
 
 use JobMetric\CustomField\CustomFieldBuilder;
-use JobMetric\Media\ServiceType\MediaBuilder;
-use JobMetric\Metadata\ServiceType\Metadata;
-use JobMetric\Metadata\ServiceType\MetadataBuilder;
+use JobMetric\Media\Typeify\MediaBuilder;
+use JobMetric\Metadata\Typeify\Metadata;
+use JobMetric\Metadata\Typeify\MetadataBuilder;
 use JobMetric\Selora\Events\SeloraBootedEvent;
 use JobMetric\Taxonomy\Facades\TaxonomyType;
-use JobMetric\Translation\ServiceType\TranslationBuilder;
+use JobMetric\Translation\Typeify\TranslationBuilder;
 use Throwable;
 
 class AddTaxonomyTypeListeners
@@ -40,8 +40,8 @@ class AddTaxonomyTypeListeners
             //->showDescriptionInList()
             //->removeFilterInList()
             ->changeStatusInList()
-            ->importInList()
-            ->exportInList()
+            ->import()
+            ->export()
             ->translation(function (TranslationBuilder $translationBuilder) {
                 $translationBuilder->customField(function (CustomFieldBuilder $customFieldBuilder) {
                     $customFieldBuilder::text()
@@ -108,8 +108,8 @@ class AddTaxonomyTypeListeners
             ->hierarchical()
             ->showDescriptionInList()
             ->changeStatusInList()
-            ->importInList()
-            ->exportInList()
+            ->import()
+            ->export()
             ->translation(function (TranslationBuilder $translationBuilder) {
                 $translationBuilder->customField(function (CustomFieldBuilder $customFieldBuilder) {
                     $customFieldBuilder::text()
@@ -151,8 +151,8 @@ class AddTaxonomyTypeListeners
             ->description('selora::base.taxonomy_type.product_tag.description')
             ->showDescriptionInList()
             ->changeStatusInList()
-            ->importInList()
-            ->exportInList()
+            ->import()
+            ->export()
             ->translation(function (TranslationBuilder $translationBuilder) {
                 $translationBuilder->customField(function (CustomFieldBuilder $customFieldBuilder) {
                     $customFieldBuilder::text()
@@ -173,8 +173,8 @@ class AddTaxonomyTypeListeners
             ->description('selora::base.taxonomy_type.customer_group.description')
             ->showDescriptionInList()
             ->changeStatusInList()
-            ->importInList()
-            ->exportInList()
+            ->import()
+            ->export()
             ->translation(function (TranslationBuilder $translationBuilder) {
                 $translationBuilder->customField(function (CustomFieldBuilder $customFieldBuilder) {
                     $customFieldBuilder::text()
